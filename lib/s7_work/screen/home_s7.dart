@@ -11,7 +11,7 @@ class S7Screen extends StatelessWidget {
         children: [
           SizedBox(
             width: double.infinity,
-            height: 550,
+            height: 530,
             child: Image.network(
               'https://cdn.pixabay.com/photo/2020/07/24/03/12/gengar-5432819__340.png',
               fit: BoxFit.fill,

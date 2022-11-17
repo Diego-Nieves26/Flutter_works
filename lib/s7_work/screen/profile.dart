@@ -269,7 +269,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             CarouselSlider(
               options: CarouselOptions(
-                height: 300,
+                height: 270,
                 aspectRatio: 16 / 16,
                 viewportFraction: 0.7,
                 initialPage: 0,

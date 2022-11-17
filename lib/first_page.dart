@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:works_certus/s7_work/screen/home_s7.dart';
+import 'package:works_certus/s8_work/screen/s8_work.dart';
 
 import 's4_work/home.dart';
 import 's5_work/s5.dart';
@@ -55,10 +56,8 @@ class FirstPageWidget extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const S5Widget()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const S5Widget()));
               },
             ),
             MaterialButton(
@@ -76,10 +75,8 @@ class FirstPageWidget extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const S6Screen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const S6Screen()));
               },
             ),
             MaterialButton(
@@ -97,10 +94,27 @@ class FirstPageWidget extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const S7Screen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const S7Screen()));
+              },
+            ),
+            MaterialButton(
+              height: 40,
+              minWidth: double.infinity,
+              color: const Color.fromARGB(255, 9, 165, 74),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20)),
+              child: const Text(
+                "Sesion 8",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const S8Home()));
               },
             ),
           ],
